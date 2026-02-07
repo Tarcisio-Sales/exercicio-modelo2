@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <main>
+        
+        <div id="nascimento">
+            Ano de Nascimento: <input type="number" id="inasci" min="1900" max="2100">    
+        </div>
+
+        <div id="sexo">
+            Sexo: 
+            <!-- colocar em label para selecionar ao clicar na palavra -->
+            <label><input type="radio" name="sexo" checked> Masculino</label> 
+            <label><input type="radio" name="sexo"> Feminino</label>
+        </div>
+
+        <div id="botao">
+            <input type="button" name="verif" value="Verificar" onclick="verificaIdade()">
+        </div>
+
+        <div id="res">Preencha os dados acima para ver o resultado.</div>
+        
+        </main>
+    <footer>
+        <p>
+            &copy; CursoemVideo
+        </p>
+    </footer>
+     <script src="script.js"></script>
+</body>
+</html> 
